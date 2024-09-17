@@ -59,7 +59,7 @@
     "webpack-manifest-plugin": "^4.0.2",
     "workbox-webpack-plugin": "^6.4.1"
   },
-  "homepage": "http://olicas.github.io/ps-react",
+  "homepage": "http://olicas.github.io/ArtForAll-ReactComponents/",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel gen:docs-watch start:docs",
