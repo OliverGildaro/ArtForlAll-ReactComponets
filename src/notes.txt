@@ -1,0 +1,97 @@
+Recomendations:
+1. Dont wrap code on week elements
+2. Always use propTypes
+3. Do not har code ids
+4. Use default props on staless components
+5. Impelement accesibility usig keyboard
+6. Use semantic html (button, section, p, etc)
+7. COPnsider configuration object (pss object to comp instead of props)
+8. Support server rendering
+  More performant
+  Usable on static apps
+9. Remember responsability principle
+
+Six stages of atomic design
+1. Atomos
+2. molecules
+3. Organisms
+4. Templates
+5. Pages
+
+Tips:
+1. Honor the native API
+2. Pass props via spread
+3. Use spread with desctructuring
+4. Create formatting components
+
+With reusable components we can bake all desitions
+like:
+  Horizonal, vertical ?
+  Errors at the top ?
+  Errors on blur, submit ?
+  Mark required fields ? if so ... how ?
+All already bake Recomendationsigth in the component.
+Consistency goes up and decition fatigue goes down.
+
+Organisms:
+1. Do not expose automatically all cofigurations 
+  of your child component.
+2. Strong opinions are a feature not a bug
+  Consistency
+  Smaller API
+  Easier to understand
+  Single responsability
+  Less surface area to TemplatesFewer bugs
+3. Try to keep your organism dump
+  Avoid creating atomic applications
+  Use containers to save people time
+  Makig organisms smart could potentially
+    lead to make double or tripples same API requests.
+  Here is why:
+    Out of sync
+    Over fetching
+    Duplicated code
+    Tight coupling
+    Brittle
+
+Compile CSS benefits
+  Variables
+  Custom fuctions
+  Automatic vendor prefixes
+  Nested selectors
+  OPtions: PostCSS, CSSnext, Sass, less
+
+Some solution to Global CSS
+  BEM
+  OOCSS
+  SMACSS
+
+CSS MODULES is the best choise
+  We can use an style css file like objects
+  The prefixes are already out of the box
+  You can write 0plain CSS, Sass/less
+  You just need to add support on webpack
+  Explicit reference
+  Composable
+  Automatic encapsulation (No need to care about colisios with third party library styles)
+  No risk or conflicts
+  Downsides
+    No dynamic styles
+    Themig is tricky
+
+If you build compoents for public be theameble about styles
+If you design for private use, cosider beimg higly opinionated about styles
+
+Import approachs
+1. Named Import
+  Most concise
+  Import entire library
+  Bloats bundle
+  Need index.js at Recomendations
+
+2. Import from lib
+  Import single components
+  Most common
+  Simple build setup
+  No index.js at root
+  More typing
