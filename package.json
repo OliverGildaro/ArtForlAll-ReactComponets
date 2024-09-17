@@ -1,7 +1,25 @@
 {
-  "name": "components",
-  "version": "0.1.0",
-  "private": true,
+  "name": "components-reusable",
+  "version": "1.0.1",
+  "main": "./index.js",
+  "private": false,
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": {
+    "name": "Oliver Castro",
+    "email": "olicas@reactjs.com",
+    "url": "http://reactjs.com/"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "components",
+    "react",
+    "react-component",
+    "toolkit"
+  ],
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
