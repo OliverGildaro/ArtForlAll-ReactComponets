@@ -177,20 +177,20 @@ module.exports = function (webpackEnv) {
       pathinfo: isEnvDevelopment,
       filename: isEnvProduction
         ? "static/js/[name].[contenthash:8].js"
-        : isEnvDevelopment && "static/js/bundle.js",
+        : "static/js/bundle.js",
       chunkFilename: isEnvProduction
         ? "static/js/[name].[contenthash:8].chunk.js"
-        : isEnvDevelopment && "static/js/[name].chunk.js",
+        : "static/js/[name].chunk.js",
       assetModuleFilename: "static/media/[name].[hash][ext]",
       publicPath: paths.publicUrlOrPath,
-      devtoolModuleFilenameTemplate: isEnvProduction
-        ? (info) =>
-            path
-              .relative(paths.appSrc, info.absoluteResourcePath)
-              .replace(/\\/g, "/")
-        : isEnvDevelopment &&
-          ((info) =>
-            path.resolve(info.absoluteResourcePath).replace(/\\/g, "/")),
+      devtoolModuleFilenameTemplate: (info) => {
+        if (isEnvProduction) {
+          return path
+            .relative(path.resolve(__dirname, "src"), info.absoluteResourcePath)
+            .replace(/\\/g, "/");
+        }
+        return path.resolve(info.absoluteResourcePath).replace(/\\/g, "/");
+      },
     },
     cache: {
       type: "filesystem",
