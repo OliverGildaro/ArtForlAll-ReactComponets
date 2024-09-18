@@ -8,7 +8,7 @@ export default function ExampleDisableButton() {
       <Button
         htmlId="htmlId"
         label="Primary"
-        type="text"
+        type="button"
         onClick={hadleClick}
         className="btn-primary"
         disabled={true}
@@ -16,7 +16,7 @@ export default function ExampleDisableButton() {
       <Button
         htmlId="htmlId2"
         label="Secondary"
-        type="text"
+        type="button"
         onClick={hadleClick}
         className="btn-secondary"
         disabled={true}
@@ -24,7 +24,7 @@ export default function ExampleDisableButton() {
       <Button
         htmlId="htmlId3"
         label="Success"
-        type="text"
+        type="button"
         onClick={hadleClick}
         className="btn-success"
         disabled={true}
@@ -32,7 +32,7 @@ export default function ExampleDisableButton() {
       <Button
         htmlId="htmlId4"
         label="Danger"
-        type="text"
+        type="button"
         onClick={hadleClick}
         className="btn-danger"
         disabled={true}

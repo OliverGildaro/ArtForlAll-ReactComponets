@@ -13,7 +13,7 @@ function ExampleJustToggleVisibility() {
   return (
     <div>
       <PasswordInput
-        htmlId="htmlId"
+        htmlId="htmlId2Password"
         name="password"
         type="password"
         onChange={(e) => setPassword(e.target.value)}

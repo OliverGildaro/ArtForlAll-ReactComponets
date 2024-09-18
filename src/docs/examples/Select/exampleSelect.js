@@ -13,7 +13,7 @@ export default function ExampleButton() {
   }
   return (
     <Select
-      htmlId="htmlId"
+      htmlId="htmlIdSelect"
       name="name"
       label="Email"
       required={false}

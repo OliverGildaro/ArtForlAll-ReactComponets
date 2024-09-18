@@ -13,7 +13,7 @@ function ExampleAllFeatures() {
   return (
     <div>
       <PasswordInput
-        htmlId="htmlId"
+        htmlId="htmlIdPasword"
         name="password"
         type="password"
         onChange={(e) => setPassword(e.target.value)}

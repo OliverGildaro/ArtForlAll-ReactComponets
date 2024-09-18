@@ -13,7 +13,7 @@ export default function FailureSelect() {
   }
   return (
     <Select
-      htmlId="htmlId"
+      htmlId="htmlIdSelect23"
       name="name"
       label="Email"
       required
