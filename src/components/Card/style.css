@@ -1,0 +1,58 @@
+.card {
+  overflow: hidden;
+  padding: 5px 5px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.card img {
+  width: 50%;
+  height: auto;
+  max-height: 300px; /* Optional: Limit the image height */
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #2f787f;
+  color: black;
+  min-height: 100%;
+  width: 50%;
+  float: right;
+}
+
+.card-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.card-desc {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    flex-direction: column; /* Stack image and body vertically */
+    max-height: none;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px;
+    margin: auto;
+  }
+
+  .card-body {
+    width: 100%;
+    margin-top: -4px;
+  }
+}

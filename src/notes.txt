@@ -151,3 +151,10 @@ FIGURE HTML
 
 HTML favicon
   to add an icon i the browser tab related to the web site
+
+
+AWS
+  AWS educate (para estudiar)
+  AWS activate (obtener creditos)
+  AWS pruebas de concepto (para practicar)
+  
