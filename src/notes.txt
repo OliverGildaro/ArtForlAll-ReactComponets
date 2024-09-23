@@ -95,3 +95,59 @@ Import approachs
   Simple build setup
   No index.js at root
   More typing
+
+
+
+html content types
+  metadata
+  flow
+  sectioniong
+  phrasing
+  heading
+  embedded
+  interactive
+
+HTML structure
+None semantic elements
+  div: used for separating page in different  blocks
+
+Semantic elements
+  <article>: Post in a blog or history (inside contains headeing and <p>)
+  <section>: Define a section in the page (do not use for layout)
+  <Nav>: To contain navigation links (to create main menu in our page)
+  <aside>: used to contain related content to the main content
+  <header>: TO add a header or navigation links
+  <footer>: Corporate content
+  <main>: Define the main ocntent of the page
+  <address>: To contain contact information
+
+Used images HTML
+  .gif
+    256 colors
+    animated
+    transparent
+    not for images
+  .png
+    Morecolors
+    Icons
+    Not animated
+  .jpg or .jpeg
+    16.7 millon of colors
+    Not animated or transparent
+    Used for photos
+  .svg
+    scale infinitely
+
+<img alt="will be used for screen readers in case the image(src) is not present" />
+
+FIGURE HTML
+<figure>
+  gives semantic meaning
+  Container for image or graph withina  document
+  <figure>
+    <img />
+    <figcaptiopn></figcaption>
+  </figure>
+
+HTML favicon
+  to add an icon i the browser tab related to the web site
