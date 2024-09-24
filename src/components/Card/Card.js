@@ -6,7 +6,12 @@ import "./style.css";
 const Card = ({ htmlId, name, description, type, date, image }) => {
   return (
     <div className="card" id={htmlId}>
-      <Image src={image} className="card-img-top" alt="asasas" />
+      <Image
+        imageContent={image.imageContent}
+        contentType={image.contentType}
+        className="card-img-top"
+        alt="asasas"
+      />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <p className="card-text">{description}</p>
@@ -23,7 +28,10 @@ Card.propTypes = {
   description: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  image: PropTypes.string,
+  image: PropTypes.shape({
+    imageContent: PropTypes.string.isRequired, // base64 string
+    contentType: PropTypes.string.isRequired, // e.g., "image/jpeg"
+  }).isRequired,
 };
 
 export default Card;

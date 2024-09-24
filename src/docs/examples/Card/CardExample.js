@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "ps-react/Card";
-import VerticalImg from "../../../../public/images/vertical.jpg";
-import HorizontalImg from "../../../../public/images/horizontal.jpg";
+import imageData from "../../../../public/images/images.json";
 
 /** With a custom message: */
 export default function CardExample() {
+  const { verticalImage } = imageData;
   return (
     <div style={{ display: "flex" }}>
       <Card
@@ -13,7 +13,7 @@ export default function CardExample() {
         description="This is a description"
         type="music"
         date="2024-10-01T15:36:51Z"
-        image={VerticalImg}
+        image={verticalImage}
       />
     </div>
   );

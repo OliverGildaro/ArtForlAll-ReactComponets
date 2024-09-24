@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Image = ({ src, className, alt, ...props }) => {
-  return <img src={src} className={className} alt={alt} {...props} />;
+const Image = ({ imageContent, contentType, className, alt, ...props }) => {
+  const imageSrc = `data:${contentType};base64,${imageContent}`;
+  return <img src={imageSrc} className={className} alt={alt} {...props} />;
 };
 
 Image.propTypes = {
-  src: PropTypes.string,
+  imageContent: PropTypes.string.isRequired, // imageContent should be a required base64 string
+  contentType: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
 };

@@ -1,7 +1,6 @@
 import React from "react";
 import CardList from "ps-react/CardList";
-import VerticalImg from "../../../../public/images/vertical.jpg";
-import HorizontalImg from "../../../../public/images/horizontal.jpg";
+import imageData from "../../../../public/images/images.json";
 
 /** With a custom message: */
 export default function ExampleCardList() {
@@ -15,7 +14,7 @@ const navItems = [
     description: "This is a description",
     type: "music",
     date: "2024-10-01T15:36:51Z",
-    image: VerticalImg,
+    image: imageData.verticalImage,
   },
   {
     htmlId: "cardId2",
@@ -23,7 +22,7 @@ const navItems = [
     description: "This is a description2",
     type: "music",
     date: "2024-10-01T15:36:51Z",
-    image: HorizontalImg,
+    image: imageData.horizontalImage,
   },
   {
     htmlId: "cardId3",
@@ -31,7 +30,7 @@ const navItems = [
     description: "This is a description2",
     type: "music",
     date: "2024-10-01T15:36:51Z",
-    image: null,
+    image: imageData.verticalImage,
   },
   {
     htmlId: "cardId4",
@@ -39,7 +38,7 @@ const navItems = [
     description: "This is a description",
     type: "music",
     date: "2024-10-01T15:36:51Z",
-    image: VerticalImg,
+    image: imageData.horizontalImage,
   },
   {
     htmlId: "cardId5",
@@ -47,7 +46,7 @@ const navItems = [
     description: "This is a description2",
     type: "music",
     date: "2024-10-01T15:36:51Z",
-    image: HorizontalImg,
+    image: imageData.verticalImage,
   },
   {
     htmlId: "cardId6",
@@ -55,6 +54,6 @@ const navItems = [
     description: "This is a description2",
     type: "music",
     date: "2024-10-01T15:36:51Z",
-    image: null,
+    image: imageData.horizontalImage,
   },
 ];
