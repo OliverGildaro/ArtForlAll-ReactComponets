@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Card";
 import "./style.css";
 
-const CardList = ({ items }) => {
+const CardList = ({ items, altImage }) => {
   return (
     <div className="card-list">
       {items.map((item) => (
@@ -14,6 +14,7 @@ const CardList = ({ items }) => {
           type={item.type}
           date={item.date}
           image={item.image}
+          altImage={altImage}
         />
       ))}
     </div>

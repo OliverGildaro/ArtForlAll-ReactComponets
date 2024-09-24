@@ -3,14 +3,14 @@ import Image from "../Image";
 import PropTypes from "prop-types";
 import "./style.css";
 
-const Card = ({ htmlId, name, description, type, date, image }) => {
+const Card = ({ htmlId, name, description, type, date, image, altImage }) => {
   return (
     <div className="card" id={htmlId}>
       <Image
-        imageContent={image.imageContent}
-        contentType={image.contentType}
+        srcImage={image}
+        altImage={altImage}
         className="card-img-top"
-        alt="asasas"
+        alt={"Alt text"}
       />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
@@ -31,7 +31,7 @@ Card.propTypes = {
   image: PropTypes.shape({
     imageContent: PropTypes.string.isRequired, // base64 string
     contentType: PropTypes.string.isRequired, // e.g., "image/jpeg"
-  }).isRequired,
+  }),
 };
 
 export default Card;

@@ -1,10 +1,11 @@
 import React from "react";
 import CardList from "ps-react/CardList";
 import imageData from "../../../../public/images/images.json";
+import defImg from "../../../../public/images/default.jpg";
 
 /** With a custom message: */
 export default function ExampleCardList() {
-  return <CardList items={navItems} />;
+  return <CardList items={navItems} altImage={defImg} />;
 }
 
 const navItems = [
@@ -22,7 +23,7 @@ const navItems = [
     description: "This is a description2",
     type: "music",
     date: "2024-10-01T15:36:51Z",
-    image: imageData.horizontalImage,
+    image: null,
   },
   {
     htmlId: "cardId3",
@@ -46,7 +47,7 @@ const navItems = [
     description: "This is a description2",
     type: "music",
     date: "2024-10-01T15:36:51Z",
-    image: imageData.verticalImage,
+    image: null,
   },
   {
     htmlId: "cardId6",
@@ -54,6 +55,6 @@ const navItems = [
     description: "This is a description2",
     type: "music",
     date: "2024-10-01T15:36:51Z",
-    image: imageData.horizontalImage,
+    image: null,
   },
 ];
