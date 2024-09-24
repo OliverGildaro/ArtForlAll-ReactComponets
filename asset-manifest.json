@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ArtForAll-ReactComponents/static/css/main.be86159b.css",
-    "main.js": "/ArtForAll-ReactComponents/static/js/main.947ebf45.js",
-    "static/js/453.9e63b54a.chunk.js": "/ArtForAll-ReactComponents/static/js/453.9e63b54a.chunk.js",
+    "main.css": "/ArtForAll-ReactComponents/static/css/main.50fa3847.css",
+    "main.js": "/ArtForAll-ReactComponents/static/js/main.7b463cec.js",
+    "static/media/vertical.jpg": "/ArtForAll-ReactComponents/static/media/vertical.ddf038b6e8b739ef4e49.jpg",
+    "static/media/horizontal.jpg": "/ArtForAll-ReactComponents/static/media/horizontal.dd51793aae550628eacf.jpg",
     "index.html": "/ArtForAll-ReactComponents/index.html",
-    "main.be86159b.css.map": "/ArtForAll-ReactComponents/static/css/main.be86159b.css.map",
-    "main.947ebf45.js.map": "/ArtForAll-ReactComponents/static/js/main.947ebf45.js.map",
-    "453.9e63b54a.chunk.js.map": "/ArtForAll-ReactComponents/static/js/453.9e63b54a.chunk.js.map"
+    "main.50fa3847.css.map": "/ArtForAll-ReactComponents/static/css/main.50fa3847.css.map",
+    "main.7b463cec.js.map": "/ArtForAll-ReactComponents/static/js/main.7b463cec.js.map"
   },
   "entrypoints": [
-    "static/css/main.be86159b.css",
-    "static/js/main.947ebf45.js"
+    "static/css/main.50fa3847.css",
+    "static/js/main.7b463cec.js"
   ]
 }
