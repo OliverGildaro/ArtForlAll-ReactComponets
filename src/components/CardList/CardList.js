@@ -7,14 +7,15 @@ const CardList = ({ items, altImage }) => {
     <div className="card-list">
       {items.map((item) => (
         <Card
-          key={item.id}
-          htmlId={item.id}
+          key={item.htmlId}
+          htmlId={item.htmlId}
           name={item.name}
           description={item.description}
           type={item.type}
           date={item.date}
           image={item.image}
           altImage={altImage}
+          createdAt={item.createdAt}
         />
       ))}
     </div>

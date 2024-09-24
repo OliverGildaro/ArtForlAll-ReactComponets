@@ -1,6 +1,6 @@
 {
   "name": "components-reusable",
-  "version": "1.0.14",
+  "version": "1.0.16",
   "main": "./lib/index.js",
   "private": false,
   "engines": {

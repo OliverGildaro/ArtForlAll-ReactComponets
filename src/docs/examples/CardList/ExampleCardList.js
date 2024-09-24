@@ -16,6 +16,7 @@ const navItems = [
     type: "music",
     date: "2024-10-01T15:36:51Z",
     image: imageData.verticalImage,
+    createdAt: "2024-10-01T15:36:51Z",
   },
   {
     htmlId: "cardId2",
@@ -24,6 +25,7 @@ const navItems = [
     type: "music",
     date: "2024-10-01T15:36:51Z",
     image: null,
+    createdAt: "2025-10-01T15:36:51Z",
   },
   {
     htmlId: "cardId3",
@@ -32,6 +34,7 @@ const navItems = [
     type: "music",
     date: "2024-10-01T15:36:51Z",
     image: imageData.verticalImage,
+    createdAt: "2025-10-01T15:36:51Z",
   },
   {
     htmlId: "cardId4",
@@ -40,6 +43,7 @@ const navItems = [
     type: "music",
     date: "2024-10-01T15:36:51Z",
     image: imageData.horizontalImage,
+    createdAt: "2025-10-01T15:36:51Z",
   },
   {
     htmlId: "cardId5",
@@ -48,6 +52,7 @@ const navItems = [
     type: "music",
     date: "2024-10-01T15:36:51Z",
     image: null,
+    createdAt: "2027-10-01T15:36:51Z",
   },
   {
     htmlId: "cardId6",
@@ -56,5 +61,6 @@ const navItems = [
     type: "music",
     date: "2024-10-01T15:36:51Z",
     image: null,
+    createdAt: "2024-10-01T15:36:51Z",
   },
 ];

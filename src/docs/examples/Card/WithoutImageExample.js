@@ -6,13 +6,14 @@ import defImg from "../../../../public/images/default.jpg";
 export default function WithoutImageExample() {
   return (
     <Card
-      htmlId="card1"
+      htmlId="card2"
       name="Domain driven design"
       description="This is a description"
       type="music"
       date="2024-10-01T15:36:51Z"
       image={null}
       altImage={defImg}
+      createdAt="2025-10-01T15:36:51Z"
     />
   );
 }
