@@ -8,8 +8,11 @@ const CardList = ({ items }) => {
       {items.map((item) => (
         <Card
           key={item.id}
-          title={item.title}
-          text={item.text}
+          htmlId={item.id}
+          name={item.name}
+          description={item.description}
+          type={item.type}
+          date={item.date}
           image={item.image}
         />
       ))}

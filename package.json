@@ -1,6 +1,6 @@
 {
   "name": "components-reusable",
-  "version": "1.0.7",
+  "version": "1.0.12",
   "main": "./lib/index.js",
   "private": false,
   "engines": {
@@ -32,7 +32,7 @@
     "tailwindcss": "^3.0.2",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://olicas.github.io/ArtForAll-ReactComponents/",
+  "homepage": "https://olivergildaro.github.io/ArtForlAll-ReactComponets/",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "cross-env NODE_ENV=development npm-run-all --parallel gen:docs-watch start:docs",
@@ -43,7 +43,11 @@
     "test": "node scripts/test.js",
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
-    "build:commonjs": "cross-env NODE_ENV=production ./node_modules/.bin/babel ./src/components --out-dir ./lib --ignore spec.js"
+    "build:css": "cpx \"./src/components/**/*.css\" ./lib/",
+    "prebuild:lib": "rimraf lib",
+    "build:lib": "npm run build:commonjs && npm run build:css",
+    "build:commonjs": "cross-env NODE_ENV=production ./node_modules/.bin/babel ./src/components --out-dir ./lib --ignore spec.js",
+    "prepublish": "npm run build:lib"
   },
   "eslintConfig": {
     "extends": [
