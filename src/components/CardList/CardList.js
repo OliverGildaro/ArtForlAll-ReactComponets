@@ -7,8 +7,8 @@ const CardList = ({ items, altImage }) => {
     <div className="card-list">
       {items.map((item) => (
         <Card
-          key={item.htmlId}
-          htmlId={item.htmlId}
+          key={item.id}
+          htmlId={item.id}
           name={item.name}
           description={item.description}
           type={item.type}
