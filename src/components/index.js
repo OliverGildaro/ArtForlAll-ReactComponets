@@ -9,3 +9,4 @@ export { default as PasswordInput } from "./PasswordInput";
 export { default as Label } from "./Label";
 export { default as Card } from "./Card";
 export { default as CardList } from "./CardList";
+export { default as GridRow } from "./GridRow";
