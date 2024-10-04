@@ -9,14 +9,16 @@ const CardList = ({ items, altImage }) => {
         <Card
           key={item.id}
           htmlId={item.id}
-          name={item.name}
+          title={item.name}
+          titleClass={item.titleClass}
           description={item.description}
-          type={item.type}
-          date={item.date}
-          image={item.image}
-          altImage={altImage}
           createdAt={item.createdAt}
-        />
+          image={item.image}
+        >
+          <p className="small">{item.startDate}</p>
+          <p className="small">{item.endDate}</p>
+          <p className="small font-weigth-bold">{item.type}</p>
+        </Card>
       ))}
     </div>
   );

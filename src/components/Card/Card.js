@@ -6,28 +6,29 @@ import { Link } from "react-router-dom";
 
 const Card = ({
   htmlId,
-  name,
+  title,
+  titleClass,
   description,
-  type,
-  date,
   createdAt,
   image,
   altImage,
+  children,
 }) => {
   return (
     <Link to={`/events/${htmlId}/${createdAt}`} className="card-link">
       <div className="card" id={htmlId}>
-        <Image
-          srcImage={image}
-          altImage={altImage}
-          className="card-img-top"
-          alt={"Alt text"}
-        />
+        {image && (
+          <Image
+            srcImage={image}
+            altImage={altImage}
+            className="card-img-top"
+            alt={"Alt text"}
+          />
+        )}
         <div className="card-body">
-          <h5 className="card-title">{name}</h5>
-          <p className="card-text">{description}</p>
-          <p className="card-text">{type}</p>
-          <p className="card-text">{date}</p>
+          <h5 className={titleClass}>{title}</h5>
+          <p className="normal">{description}</p>
+          {children}
         </div>
       </div>
     </Link>
@@ -36,10 +37,9 @@ const Card = ({
 
 Card.propTypes = {
   htmlId: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  titleClass: PropTypes.string,
   description: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
   image: PropTypes.shape({
     imageContent: PropTypes.string.isRequired, // base64 string
     contentType: PropTypes.string.isRequired, // e.g., "image/jpeg"

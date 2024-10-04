@@ -18,7 +18,7 @@
 }
 
 .card-body {
-  background-color: #2f787f;
+  background-color: var(--color-primary-200);
   color: black;
   min-height: 100%;
   width: 50%;

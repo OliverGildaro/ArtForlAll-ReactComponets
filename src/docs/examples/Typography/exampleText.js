@@ -14,8 +14,8 @@ export default function ExampleButton() {
         text="This is normal bold text"
       />
       <Typography
-        className="small font-weight-normal"
-        text="This is small normal text"
+        className="small font-weight-bold"
+        text="This is small bold text"
       />
       <Typography
         className="lead font-weight-light"
@@ -24,6 +24,10 @@ export default function ExampleButton() {
       <Typography
         className="lead font-italic"
         text="This is lead italic  text"
+      />
+      <Typography
+        className="lead font-weight-bold"
+        text="This is lead bold  text"
       />
     </div>
   );
