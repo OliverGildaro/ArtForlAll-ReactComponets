@@ -81,39 +81,91 @@ function ExampleForm() {
 
   return (
     <Checkout onSubmit={handleSubmit}>
-      <TextInput
-        htmlId="name"
-        name="name"
-        label="Name:"
-        type="text"
-        required
-        onChange={handleChange}
-        placeholder="Enter a name"
-        value={data.name}
-        feedback={errors.name}
-        isSuccess={!errors.name}
-      />
-      <TextArea
-        htmlId="description"
-        name="description"
-        label="Description"
-        required={false}
-        onChange={handleChange}
-        placeholder="Enter a description"
-        value={data.value}
-        feedback={errors.description}
-        isSuccess={!errors.description}
-      />
-      <Select
-        htmlId="type"
-        name="type"
-        label="Type event"
-        required={false}
-        onChange={handleChange}
-        placeHolder={"Select an option"}
-        value={data.value}
-        options={options}
-      />
+      <div className="form-row">
+        <div className="col-7">
+          <TextInput
+            htmlId="name"
+            name="name"
+            label="Name:"
+            type="text"
+            required
+            onChange={handleChange}
+            placeholder="Enter a name"
+            value={data.name}
+            feedback={errors.name}
+            isSuccess={!errors.name}
+          />
+        </div>
+        <div className="col-5">
+          <Select
+            htmlId="type"
+            name="type"
+            label="Type event"
+            required={false}
+            onChange={handleChange}
+            placeHolder={"Select an option"}
+            value={data.value}
+            options={options}
+          />
+        </div>
+      </div>
+      <div className="form-row">
+        <div className="col-12">
+          <TextArea
+            htmlId="description"
+            name="description"
+            label="Description"
+            required={false}
+            onChange={handleChange}
+            placeholder="Enter a description"
+            value={data.value}
+            feedback={errors.description}
+            isSuccess={!errors.description}
+          />
+        </div>
+      </div>
+      <div className="form-row">
+        <div className="col-4">
+          <TextInput
+            htmlId="name"
+            name="Email"
+            label="Name:"
+            type="text"
+            required
+            onChange={handleChange}
+            placeholder="Enter a name"
+            value={data.name}
+            feedback={errors.name}
+            isSuccess={!errors.name}
+          />
+        </div>
+        <div className="col-4">
+          <TextInput
+            htmlId="name"
+            name="address"
+            label="Name:"
+            type="text"
+            required
+            onChange={handleChange}
+            placeholder="Enter a name"
+            value={data.name}
+            feedback={errors.name}
+            isSuccess={!errors.name}
+          />
+        </div>
+        <div className="col-4">
+          <Select
+            htmlId="type"
+            name="state"
+            label="Type event"
+            required={false}
+            onChange={handleChange}
+            placeHolder={"Select an option"}
+            value={data.value}
+            options={options}
+          />
+        </div>
+      </div>
       <Button
         htmlId="htmlIdButton"
         label="Submit"
