@@ -31,6 +31,7 @@ const validationRules = {
   },
 };
 
+/** ExampleForm */
 function ExampleForm() {
   const [data, setData] = useState({
     name: "",

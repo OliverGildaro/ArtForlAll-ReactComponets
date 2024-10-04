@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "ps-react/Card";
+import CardImg from "ps-react/CardImg";
 import imageData from "../../../../public/images/images.json";
 
 /** Card with image */
 export default function CardExample() {
   const { verticalImage } = imageData;
   return (
-    <Card
+    <CardImg
       htmlId="card1"
       title="Domain driven design"
       titleClass="h4"

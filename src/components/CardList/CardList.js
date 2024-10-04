@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "../Card";
+import CardImg from "../CardImg";
 import "./style.css";
 
 const CardList = ({ items, altImage }) => {
   return (
     <div className="card-list">
       {items.map((item) => (
-        <Card
+        <CardImg
           key={item.id}
           htmlId={item.id}
           title={item.name}
@@ -18,7 +18,7 @@ const CardList = ({ items, altImage }) => {
           <p className="small">{item.startDate}</p>
           <p className="small">{item.endDate}</p>
           <p className="small font-weigth-bold">{item.type}</p>
-        </Card>
+        </CardImg>
       ))}
     </div>
   );

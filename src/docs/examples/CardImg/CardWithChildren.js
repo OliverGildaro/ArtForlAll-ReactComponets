@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "ps-react/Card";
+import CardImg from "ps-react/CardImg";
 
 /** Card with children */
 export default function CardWithChildren() {
   return (
-    <Card
+    <CardImg
       htmlId="card1"
       title="Domain driven design"
       titleClass="h3"
@@ -18,6 +18,6 @@ export default function CardWithChildren() {
       <p className="small">2024-10-01T15:36:51Z</p>
       <p className="small">2025-10-01T15:36:51Z</p>
       <p className="small font-weigth-bold">music</p>
-    </Card>
+    </CardImg>
   );
 }

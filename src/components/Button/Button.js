@@ -11,19 +11,17 @@ const Button = ({
   ...props
 }) => {
   return (
-    <div className="form-group">
-      <button
-        id={htmlId}
-        type={type}
-        onClick={onClick}
-        className={`btn ${className}`}
-        disabled={disabled}
-        data-testid="button"
-        {...props}
-      >
-        {label}
-      </button>
-    </div>
+    <button
+      id={htmlId}
+      type={type}
+      onClick={onClick}
+      className={`btn ${className}`}
+      disabled={disabled}
+      data-testid="button"
+      {...props}
+    >
+      {label}
+    </button>
   );
 };
 

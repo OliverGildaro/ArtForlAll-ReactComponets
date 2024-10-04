@@ -1,11 +1,11 @@
 import React from "react";
-import Card from "ps-react/Card";
+import CardImg from "ps-react/CardImg";
 import defImg from "../../../../public/images/default.jpg";
 
 /** Card only text */
 export default function WithoutImageExample() {
   return (
-    <Card
+    <CardImg
       htmlId="card2"
       name="Domain driven design"
       title="Domain driven design"
