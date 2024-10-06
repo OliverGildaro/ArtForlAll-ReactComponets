@@ -15,12 +15,14 @@ export default function ExampleCardForm() {
         htmlId="htmlId3"
         label="secondary"
         type="button"
+        onClick={() => {}}
         className="btn-secondary btn-sm btn-block"
       />
       <Button
         htmlId="htmlId3"
         label="primary"
         type="button"
+        onClick={() => {}}
         className="btn-primary btn-sm btn-block"
       />
     </CardAction>

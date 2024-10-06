@@ -12,7 +12,6 @@ const CardList = ({ items, altImage }) => {
           title={item.name}
           titleClass={item.titleClass}
           description={item.description}
-          createdAt={item.createdAt}
           image={item.image}
         >
           <p className="small">{item.startDate}</p>

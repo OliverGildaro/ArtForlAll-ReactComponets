@@ -18,7 +18,6 @@ const navItems = [
     startDate: "2024-10-01T15:36:51Z",
     endDate: "2024-10-01T15:36:51Z",
     image: imageData.verticalImage,
-    createdAt: "2024-10-01T15:36:51Z",
   },
   {
     htmlId: "cardId2",
@@ -29,7 +28,6 @@ const navItems = [
     startDate: "2024-10-01T15:36:51Z",
     endDate: "2024-10-01T15:36:51Z",
     image: null,
-    createdAt: "2025-10-01T15:36:51Z",
   },
   {
     htmlId: "cardId3",
@@ -40,7 +38,6 @@ const navItems = [
     startDate: "2024-10-01T15:36:51Z",
     endDate: "2024-10-01T15:36:51Z",
     image: imageData.verticalImage,
-    createdAt: "2025-10-01T15:36:51Z",
   },
   {
     htmlId: "cardId4",
@@ -51,7 +48,6 @@ const navItems = [
     startDate: "2024-10-01T15:36:51Z",
     endDate: "2024-10-01T15:36:51Z",
     image: imageData.horizontalImage,
-    createdAt: "2025-10-01T15:36:51Z",
   },
   {
     htmlId: "cardId5",
@@ -73,6 +69,5 @@ const navItems = [
     startDate: "2024-10-01T15:36:51Z",
     endDate: "2024-10-01T15:36:51Z",
     image: null,
-    createdAt: "2024-10-01T15:36:51Z",
   },
 ];

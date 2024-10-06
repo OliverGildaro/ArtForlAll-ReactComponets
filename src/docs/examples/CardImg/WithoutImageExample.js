@@ -15,7 +15,6 @@ export default function WithoutImageExample() {
       date="2024-10-01T15:36:51Z"
       image={null}
       altImage={defImg}
-      createdAt="2025-10-01T15:36:51Z"
     />
   );
 }

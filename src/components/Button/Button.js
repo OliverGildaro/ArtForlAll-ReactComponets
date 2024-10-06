@@ -39,12 +39,12 @@ Button.propTypes = {
   type: PropTypes.oneOf(["button", "submit", "reset"]),
 
   /** Type of the butto */
-  className: PropTypes.oneOf([
-    "btn-primary",
-    "btn-secondary",
-    "btn-success",
-    "btn-danger",
-  ]).isRequired,
+  // className: PropTypes.oneOf([
+  //   "btn-primary",
+  //   "btn-secondary",
+  //   "btn-success",
+  //   "btn-danger",
+  // ]).isRequired,
 
   /** Value */
   disabled: PropTypes.bool,

@@ -16,7 +16,6 @@ export default function CardExample() {
       endDate="2024-10-01T15:36:51Z"
       image={verticalImage}
       altImage={null}
-      createdAt="2024-10-01T15:36:51Z"
     />
   );
 }

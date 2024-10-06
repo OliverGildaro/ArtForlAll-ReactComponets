@@ -2,7 +2,6 @@ import React from "react";
 import Image from "../Image";
 import PropTypes from "prop-types";
 import "./style.css";
-import { Link } from "react-router-dom";
 import CardBody from "../CardBody";
 
 const CardImg = ({
@@ -10,31 +9,24 @@ const CardImg = ({
   title,
   titleClass,
   description,
-  createdAt,
   image,
   altImage,
   children,
 }) => {
   return (
-    <Link to={`/events/${htmlId}/${createdAt}`} className="card-link">
-      <div className="card" id={htmlId}>
-        {image && (
-          <Image
-            srcImage={image}
-            altImage={altImage}
-            className="card-img-top"
-            alt={"Alt text"}
-          />
-        )}
-        <CardBody
-          title={title}
-          titleClass={titleClass}
-          description={description}
-        >
-          {children}
-        </CardBody>
-      </div>
-    </Link>
+    <div className="card" id={htmlId}>
+      {image && (
+        <Image
+          srcImage={image}
+          altImage={altImage}
+          className="card-img-top"
+          alt={"Alt text"}
+        />
+      )}
+      <CardBody title={title} titleClass={titleClass} description={description}>
+        {children}
+      </CardBody>
+    </div>
   );
 };
 
@@ -47,7 +39,6 @@ CardImg.propTypes = {
     imageContent: PropTypes.string.isRequired, // base64 string
     contentType: PropTypes.string.isRequired, // e.g., "image/jpeg"
   }),
-  createdAt: PropTypes.string.isRequired,
 };
 
 export default CardImg;

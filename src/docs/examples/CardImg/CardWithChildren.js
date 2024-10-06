@@ -13,7 +13,6 @@ export default function CardWithChildren() {
       startDate="2024-10-01T15:36:51Z"
       endDate="2024-10-01T15:36:51Z"
       altImage={null}
-      createdAt="2024-10-01T15:36:51Z"
     >
       <p className="small">2024-10-01T15:36:51Z</p>
       <p className="small">2025-10-01T15:36:51Z</p>
